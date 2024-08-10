@@ -151,6 +151,8 @@ services:
       # use 3001:8080 . Do not add any extra address etc here, that way it does not work.
       # remove port mapping if you use nginx reverse proxy, port 8080 is already exposed to wekan-tier network
       - 80:8080
+    expose:
+      - "80"
     environment:
       #-----------------------------------------------------------------
       # ==== WRITEABLE PATH FOR FILE UPLOADS ====
